@@ -16,7 +16,9 @@ function pol2xyz(r,theta,phi){
 	]
 }
 //theta is the angle in the horizontal plane. -pi <= theta < pi
-//phi is the angle of elevation
+//phi is the angle of elevation. -pi/2 <= phi < pi/2
+//when looking around with the camera, it should be impossible to look directly upwards.
+//It should be like one of those games where you end up spinning around on the spot when you try to look up. 
 
 function xyz2pol(x,y,z){
 	return [mod(x,y,z),
